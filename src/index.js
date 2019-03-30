@@ -115,8 +115,6 @@ class Game extends React.Component {
     const current = history[history.length - 1];
     const squares = current.squares.slice();
 
-
-
     if (squares[i] === null && calculateWinner(squares) === null) {
       this.state.xIsNext ? squares[i] = 'X' : squares[i] = 'O';
       this.setState({
